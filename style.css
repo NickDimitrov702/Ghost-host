@@ -206,7 +206,7 @@ header img {
     height: 350px;
     position: relative;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .carousel-img {
@@ -275,6 +275,9 @@ header img {
     background-color: rgba(128, 128, 128, 0.571);
 }
 
+.carousel-buttons input:active {
+    background-color: rgba(128, 128, 128, 0.571);
+}
 
 
 
