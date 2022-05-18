@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
-
+/* custom */
 :root {
     --main-tex-color: white;
     --secondary-text-color: rgb(128, 128, 128);
     --main-font-family: 'Roboto', sans-serif;
 }
 
+/* removing the default margin and padding */
 body {
     margin: 0px;
     padding: 0px;
     font-family: var(--main-font-family);
 }
-
+/* <--Header Syling---> */
 header {
     display: flex;
     background-image: url('./assests/Hero-background.jpg');
@@ -75,6 +76,7 @@ header img {
     border-bottom: 2.5px solid rgb(125, 125, 125);
 }
 
+/* <--Hero-Styling--> */
 .hero-wrapper {
     position: relative;
     align-self: center;
@@ -97,7 +99,7 @@ header img {
     line-height: 25px;
     margin-top: 0px;
 }
-
+/* <--Log-in-buttons-Styling--> */
 .buttons-wrapper {
     display: flex;
     height: 140px;
@@ -128,6 +130,7 @@ header img {
     max-width: 100%;
 }
 
+/* <--About-section-styling--> */
 .about-wrapper {
     display: flex;
     height: 350px;
@@ -227,7 +230,7 @@ header img {
 .job-title {
     color: var(--secondary-text-color);
 }
-
+/* <--Carousel-styling--> */
 .carousel-wrapper {
     width: 100%;
     /* max-width: 800px; */
@@ -307,7 +310,7 @@ header img {
     background-color: rgba(128, 128, 128, 0.571);
 }
 
-
+/* <--App-info-styling--> */
 .app-info-wrapper {
     display: grid;
     grid-template-columns: auto auto auto auto;
