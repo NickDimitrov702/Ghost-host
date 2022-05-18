@@ -2,9 +2,9 @@ const headerBackGround = document.querySelectorAll('header')
 console.log(headerBackGround)
 const slides = document.querySelectorAll('.slide')
 const dots = document.querySelector('.carousel-buttons')
+let socialLsit = document.querySelectorAll('.social-media-list')
 // current slide for indicating the count of slides
 let currSlide = 0;
-
 let maxSlide = slides.length - 1;
 
 //loop torugh each slide to translateX property * 100%
@@ -48,5 +48,6 @@ dots.addEventListener('click', (e) => {
     }
 
 })
+
 
 
