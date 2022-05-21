@@ -37,9 +37,6 @@ header img {
     margin: 10px 400px 25px auto;
     float: left;
     align-self: flex-start;
-
-
-
 }
 
 .header-list-items-wrapper {
@@ -481,3 +478,9 @@ header img {
     margin: 5px;
 
 }
+
+/* @media (max-width: 1024px) {
+    .header-list-items-wrapper li a{
+        color: red;
+    }
+  } */
