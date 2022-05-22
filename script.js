@@ -15,39 +15,56 @@ slides.forEach((slide, indx) => {
 //adding eventlistener to all dots
 dots.addEventListener('click', (e) => {
     e.preventDefault()
-    
+
 
 
     //using event.target to locate the correct slide
-    if(e.target.className === 'slide-selector1') {
+    if (e.target.className === 'slide-selector1') {
         e.target.focus()
         // indicating the index of the slide. 
         currSlide = 0
         // translatingX the slides based on the currSlideIndex, multiplying to 100 translated to 0%.
         slides.forEach((slide, indx) => {
             slide.style.transform = `translateX(${indx * 100}%)`;
-        }); 
+        });
     }
 
-    if(e.target.className === 'slide-selector2' ) {
+    if (e.target.className === 'slide-selector2') {
         e.target.focus()
         // hard-coding the slide index
         currSlide = 1
         // translateX subtracting the index with the currslide, multiply by 100
         slides.forEach((slide, indx) => {
             slide.style.transform = `translateX(${100 * (indx - currSlide)}%)`;
-        }); 
+        });
     }
 
-    if(e.target.className === 'slide-selector3' ) {
+    if (e.target.className === 'slide-selector3') {
         e.target.focus()
         currSlide = 2
         slides.forEach((slide, indx) => {
             slide.style.transform = `translateX(${100 * (indx - currSlide)}%)`;
-        }); 
+        });
     }
 
 })
 
 
 
+// Algorith assignment
+
+function bestSprintsCalculator(arr) {
+    // 3 sequence; 
+    let numOfSequence = 3;
+    let test = [];
+    for (let i = 0; i < arr.length; i++) {
+        let currNum = arr[i];
+        let nextNum = arr[i + 1]
+
+        
+
+    }
+    console.log(test)
+}
+
+bestSprintsCalculator([11, 14, 10, 12])
