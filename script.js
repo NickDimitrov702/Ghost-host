@@ -49,6 +49,31 @@ dots.addEventListener('click', (e) => {
 
 })
 
+setTimeout((number) => {
+    
+    if (number < 1) {
+        slides.forEach((slide, indx) => {
+            number + 1;
+            slide.style.transform = `translateX(${indx * 100}%)`
+        })
+    }
+
+    if (number < 2) {
+        slides.forEach((slide, indx) => {
+            number + 1;
+            slide.style.transform = `translateX(${100 * (indx - currSlide)}%)`
+        })
+    }
+
+    if (number < 1) {
+        slides.forEach((slide, indx) => {
+            number + 1;
+            slide.style.transform = `translateX(${100 * (indx - currSlide)}%)`
+        })
+    }
+
+},100)
+
 
 
 // Algorith assignment
@@ -61,7 +86,7 @@ function bestSprintsCalculator(arr) {
         let currNum = arr[i];
         let nextNum = arr[i + 1]
 
-        
+
 
     }
     console.log(test)
